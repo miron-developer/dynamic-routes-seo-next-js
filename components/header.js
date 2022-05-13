@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const Header = () => (
   <header>
@@ -13,18 +13,8 @@ const Header = () => (
           <a>About</a>
         </Link>
       </li>
-      <li>
-        <Link href="/post/first">
-          <a>First Post</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/post/second">
-          <a>Second Post</a>
-        </Link>
-      </li>
     </ul>
   </header>
-)
+);
 
-export default Header
+export default Header;
