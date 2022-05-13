@@ -1,5 +1,6 @@
-import Header from "../../../../components/header";
 import Head from "next/head";
+
+import Header from "../../../../components/header";
 
 const image =
   "https://dachverband-werder.de/wp-content/uploads/2021/12/public-awareness.jpg";
@@ -20,9 +21,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { id } }) {
-  let post = await fetch(`https://gorest.co.in/public/v2/posts/${id}`).then(
-    (resp) => resp.json()
-  );
+  let post = await fetch(`https://gorest.co.in/public/v2/posts/${id}`)
+    .then((resp) => resp.json())
+    .catch((e) => e);
 
   return { props: { ...post } };
 }

@@ -1,7 +1,8 @@
-import Header from "../../../../components/header";
-import Head from "next/head";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import Head from "next/head";
+
+import Header from "../../../../components/header";
 
 const image =
   "https://dachverband-werder.de/wp-content/uploads/2021/12/public-awareness.jpg";
