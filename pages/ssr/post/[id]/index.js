@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import Header from "../../../../components/header";
+import Header from "@/components/header";
 
 const image =
   "https://dachverband-werder.de/wp-content/uploads/2021/12/public-awareness.jpg";
@@ -16,8 +16,6 @@ export async function getServerSideProps({ query }) {
 const Post = ({ id, title, body }) => {
   return (
     <>
-      <Header />
-
       <Head>
         <title>{title} | SEO-Test</title>
 
@@ -29,6 +27,8 @@ const Post = ({ id, title, body }) => {
         <meta name="twitter:description" content={body} />
         <meta name="twitter:image" content={image} />
       </Head>
+
+      <Header />
 
       <h1>Post: {id}</h1>
       <h2>Title: {title}</h2>

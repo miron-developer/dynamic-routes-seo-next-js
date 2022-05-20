@@ -18,7 +18,7 @@ const Home = () => (
     </ul>
 
     <p>
-      Hint: for static routes only available ids are: range between 1533-1556
+      Hint: for static routes only available ids are: range between 1958-2027
     </p>
   </>
 );
